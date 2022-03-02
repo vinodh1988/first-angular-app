@@ -166,3 +166,10 @@ Angular -
 * it receives values and impacts behaviour 
 
 examples: style,ngStyle,ngClass,routerLink
+
+### output Directives
+* output directives are events 
+* wheneven the events associated with the directive occurs, it calls the function mentioned in the value 
+* it is enclosed within ()
+
+examples : click,mouseover,keyup,change,keydown

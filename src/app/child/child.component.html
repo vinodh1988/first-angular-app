@@ -1,3 +1,6 @@
 <div class="box">
    <h3 [ngStyle]="styleit">{{title}}</h3>  
+   <ul [style.color]="'darkred'">
+       <li *ngFor="let x of colors" (click)="process(x)">{{x}}</li>
+   </ul>
 </div>
