@@ -131,3 +131,22 @@ Angular -
 								 
 								 
 								 <app-box></app-box>
+
+# Directives
+   
+   The custom elements and attributes that you create in angular  - directives
+
+   Directives are classified into 
+
+   * Component Directives
+   * Structural Directives
+   * Atrribute directives
+
+## Structural directives
+ 
+   These are custom attributes
+
+   * all structural directives are prefixed with *
+   * Structural directives deals with generating template or hiding/unhiding templates
+
+   Examples : ngIf, ngSwitch, ngFor
