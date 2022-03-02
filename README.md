@@ -150,3 +150,19 @@ Angular -
    * Structural directives deals with generating template or hiding/unhiding templates
 
    Examples : ngIf, ngSwitch, ngFor
+
+## Attribute Directives 
+
+    * these directives impacts behaviour [data or css will be changed]
+
+    furthur attribute directives are classified into 
+
+* input directives
+* output Directives
+* input output directives
+### input directives
+
+* input directives are enclosed within [] 
+* it receives values and impacts behaviour 
+
+examples: style,ngStyle,ngClass,routerLink

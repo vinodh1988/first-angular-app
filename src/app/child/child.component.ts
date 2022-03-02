@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 title:string="B O X"
+styleit:object={backgroundColor: 'yellow',fontFamil: 'arial', color: 'darkred'}
   constructor() { }
 
   ngOnInit(): void {
