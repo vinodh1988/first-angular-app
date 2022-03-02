@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   org:string = 'firstapp';
+  team:string[]=["Joseph","John","Ajay","Arun","Bose"]
 }
