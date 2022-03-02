@@ -1,27 +1,133 @@
-# Firstapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+# Modern js Development approach
 
-## Development server
+ ## Development
+  
+* language -typescript,es2021,es2020, jsx,tsx
+* Development - node js based server
+		   
+ ##   transition
+ ```
+	             - we need to run node js based server during development
+				 - the application is built the code is converted to 
+				  javascript
+				  -while the application is built it is also packed ,when
+				  packing the unnecassary unused code in the libraries 
+				  will be ignored only the used js code and css code will be
+				  code - BUNDLING
+				  - We also can run unit and integration tests
+				  - we can also lint our application [checking quality of code]
+				  
+		   Node js is a platform which is needed to carry out all 
+		   these activities
+		   
+		   these activities are carried out by taskrunners[grunt,gulp], scripts,
+		   bundling tools [webpack], transpiler[babel]
+		   
+```
+		 
+		 
+   production
+   
+           language - es5 /es2015/es2017
+		   server - iis/nginx/apache/tomcat
+		   
+		   
+		   
+		All the activities that need to be configured
+		to carry out 
+		          development
+				  building
+				  packing
+				  testing
+				  linting
+				  is carried one single utility
+				  called as Angular CLI
+				  
+		to work with angular project
+		
+		        1. create project [create components, pipe,directives,services...]
+				2. build app
+				3. run app
+				4. run test cases
+				5. run linting
+				
+				angular cli is the tool needed -13
+				  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ node js
+ 
+          utilities
+		           typescript compiler
+		            babel
+		  
+		           npm install -g typescript 
+				   
+		  libraries - should be installed locally [in the project scope]
+		          angular library - production
+				  bootstrap - production
+				  jasmine - development
+				  typescript library - development
+				  
+				  Development libraries
+				  
+				    npm install --save-dev <library name>
+				  
+				  Production
+				  
+				     npm install --save <libraryname>
+					 npm install <libraryname>
+					 
+					 these libraries are downloaded under
+					 node_modules in the current project folder
+					 and the library details are updated
+					 in package.json
+					 
+					 
+				  Local install means - you have to run these
+				  commands in the project folder
+				  
+				  global installation - can be run anywhere
+				  
+Angular -
+     
+	 an application app is meant  develop SPA
+	 
+	 That single page is a collection of components
+	 
+	 An angular application is also called an angular module
+	 
+	 And an angular module is collection of 
+	 
+	         1. modules
+			 2. components
+			 3. services
+			 4. pipes
+			 5. Directives
+			 6. Routing configuration
+			 
+			 Component?
+			              UI Unit
+						  
+						         1. template [html]
+								 2. style [css]
+								 3. data
+								 4. events [handling]
+								 
+					
+					@Component(
+					   selector: 'app-box'
+					   templateUrl:"x.html",
+					   styleUrls:['x.css"]
+					)
+					class Box{
+					   things:string[]
+					   
+					   handleButton(){
+					   }
+					}
+								 
+								 
+								 
+								 
+								 <app-box></app-box>
