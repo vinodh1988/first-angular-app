@@ -16,8 +16,9 @@ export class AppComponent {
   information:any[]=boxes;
   message:string="Nothing received yet from child"
 
-  receiveFromChild(message:string):void
+  receiveFromChild(message:any):void
   {
-    this.message=message
+    this.message=message.title+" is the course selected and the description is "+
+                message.description;
   }
 }
