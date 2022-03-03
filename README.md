@@ -182,3 +182,19 @@ it is applied on form elements
 when ever you change form data variable will be changed to
 whenever variable value changed programatically form data will change
 
+### Input and Output
+
+
+Communication between parent and child component
+
+
+Best Practice -? 
+   
+   Flow of data in component hierarchy must be unidirectional
+   
+   information flow should be always from parent to child
+   
+   
+   Input  - parent passing input to child
+   
+   output - parent receiving output from child based on event

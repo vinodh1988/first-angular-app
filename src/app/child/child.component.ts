@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -8,12 +8,23 @@ import { Component, OnInit } from '@angular/core';
 export class ChildComponent implements OnInit {
 title:string="B O X"
 colors=["blue","red","yellow","green","orange"]
-styleit:any={backgroundColor: 'yellow',fontFamily: 'arial', color: 'darkred'}
-bcolor:string="#297ED2"
+
+
+
+@Input() fcolor:string="";
+@Input() bcolor:string="";
+@Input('fontname') ffamily:string="";
+
+styleit:any={backgroundColor: 'yellow',fontFamily: this.ffamily, color: this.fcolor}
+
 temp:string="India"
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ngOnChanges(){
+     this.styleit= {backgroundColor: 'yellow',fontFamily: this.ffamily, color: this.fcolor}
   }
 
   process(x:string):void

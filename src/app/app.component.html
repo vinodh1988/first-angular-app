@@ -5,4 +5,31 @@
 <ul>
    <li *ngFor="let x of team">{{x}}</li>
 </ul>
-<app-child *ngFor="let x of [0,1,2,3,4]"></app-child>
+<div>
+   <h3>CSS properties</h3>
+   <table>
+      <thead>
+           <th>property</th>
+           <th>value</th>
+      </thead>
+      <tbody>
+         <tr>
+           <td>Font family</td>
+           <td><select [(ngModel)]="fontFamily">
+                       <option *ngFor="let x of fonts">{{x}}</option>
+               </select>
+           </td>
+         </tr> 
+         <tr>
+            <td>Background Color</td>
+            <td><input type="color" [(ngModel)]="backgroundColor"></td>
+          </tr>
+          <tr>
+            <td>Color</td>
+            <td><input type="color" [(ngModel)]="color"></td>
+          </tr>
+      </tbody>
+   </table>
+</div>
+<app-child *ngFor="let x of [0,1,2,3,4]" [fcolor]="color"
+[bcolor]="backgroundColor" [fontname]="fontFamily"></app-child>
