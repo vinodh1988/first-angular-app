@@ -1,5 +1,6 @@
 <h1>Angular is working</h1>
 <h5>Developed by {{org}}</h5>
+<h3 [style.color]="'darkred'">{{message}}</h3>
 <hr/>
 
 <h3>Team members</h3>
@@ -8,7 +9,7 @@
 </ul>
 <hr/>
    <app-card *ngFor="let x of information" [title]="x.title" 
-   [description]="x.description"></app-card>
+   [description]="x.description" (receive)="receiveFromChild($event)"></app-card>
 <hr/>
 <div>
    <h3>CSS properties</h3>

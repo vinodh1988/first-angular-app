@@ -14,4 +14,10 @@ export class AppComponent {
   backgroundColor="#0A66BE"
   fonts=["Arial","Agency FB","Comic Sans MS","Courier","Times New Roman","Forte"]
   information:any[]=boxes;
+  message:string="Nothing received yet from child"
+
+  receiveFromChild(message:string):void
+  {
+    this.message=message
+  }
 }
