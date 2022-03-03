@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {boxes} from './data/data'
+import { FirstService } from './services/first.service';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,10 @@ export class AppComponent {
   fonts=["Arial","Agency FB","Comic Sans MS","Courier","Times New Roman","Forte"]
   information:any[]=boxes;
   message:string="Nothing received yet from child"
+  technology:any
+  constructor(private fs:FirstService ){
+    this.technology = this.fs.getTechnology();
+  }
 
   receiveFromChild(message:any):void
   {

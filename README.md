@@ -198,3 +198,11 @@ Best Practice -?
    Input  - parent passing input to child
    
    output - parent receiving output from child based on event
+
+## Service 
+Service in angular is a class whose objects are injectable [construction injection]
+,generally services are singleton
+
+services provide data to the components or recieves data components
+
+services are usually singleton, that helps multiple components share same data
