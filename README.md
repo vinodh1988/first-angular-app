@@ -173,3 +173,12 @@ examples: style,ngStyle,ngClass,routerLink
 * it is enclosed within ()
 
 examples : click,mouseover,keyup,change,keydown
+
+### input output Directives
+* input output directives works two way
+
+the is a directive called ngModel generally
+it is applied on form elements
+when ever you change form data variable will be changed to
+whenever variable value changed programatically form data will change
+

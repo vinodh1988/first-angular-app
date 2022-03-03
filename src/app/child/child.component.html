@@ -1,6 +1,9 @@
-<div class="box">
+<div class="box" [style.backgroundColor]="bcolor">
    <h3 [ngStyle]="styleit">{{title}}</h3>  
    <ul [style.color]="'darkred'">
        <li *ngFor="let x of colors" (click)="process(x)">{{x}}</li>
    </ul>
+   change background > <input type="color" [(ngModel)]="bcolor">
+   <input type="text" [(ngModel)]="temp"/>
+   <br/>{{temp}}
 </div>
